@@ -7,9 +7,10 @@ Utility to optionally delete tweets & retweets from the timeline which are older
 - Real-time nature of Twitter makes tweets irrelevant after a certain period of time
 - Content posted years ago becomes mundane to represent your ideas
 
-### Set up
 
-[Create a new Twitter application and generate API keys](https://apps.twitter.com/). The program assumes the following environment variables are set:
+## setting up
+
+fleets run on scheduled jobs in GitHub actions. To run your own fleet [fork this repo](https://github.com/alter123/fleets/fork) and [create a new Twitter application and generate API keys](https://apps.twitter.com/). The program assumes the following [environment variables](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets) are set:
 
 ```sh
 TWITTER_CONSUMER_KEY
@@ -20,5 +21,6 @@ MAX_TWEET_AGE
 ```
 `MAX_TWEET_AGE` expects a value of hours, such as: `MAX_TWEET_AGE = 72h`
 
+##
 
 Runs upon [github actions](https://github.com/features/actions) ![github actions](https://github.githubassets.com/images/modules/site/features/actions-icon-actions.svg)
